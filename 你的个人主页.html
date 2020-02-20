@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的个人空间</title>
+<script>
+    function discover(){
+        var sine=document.getElementById('sine');
+        if(sine.className=='input_3'){
+            sine.className='input_2';
+        }
+        else{
+            sine.className='input_3';
+        }
+    }
+
+        
+        
+        var collect=document.getElementById('collect'); 
+        var collectp=document.getElementById('collect p');
+
+        function change1(){
+            collectp.style.color='rgb(74, 183, 255)';
+        }
+
+        function change2(){
+            collectp.style.color='#999999a8';
+        }
+
+        collect.onmouseover=change1;
+        collect.onmouseout=change2;
+    
+
+</script>
+</head>
+
+<style type="text/css">
+    html{
+        
+        width:100%;
+        overflow-x:hidden;
+
+        height: 100%;
+    }
+
+    body{
+        
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        background-color: rgb(127, 139, 127);
+        font-family: Microsoft Yahei;
+    }
+    
+    #firstblock{
+        width: 100%;
+        height: 56px;
+        box-shadow: 0px 5px 5px 0px rgb(32, 32, 32,0.1);
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #firstblock a{
+        margin-left: 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    #firstblock em{
+        transform: rotate(90deg);
+        color: gray;
+        font-weight:bold;
+        margin: -10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        cursor: pointer;
+    }
+
+    .input_1{
+        background-color: rgba(223, 222, 222, 0.486);
+        border-radius: 2px;
+        height: 34px;
+        width:420px;
+        border-style: solid;
+        color: #999999;
+    }
+
+    .search{
+        background-color: rgba(192, 192, 192, 0.295);
+        border-style: none;
+        border-radius: 2px;
+        padding: 9px 15px;
+        transition-duration: 0.3s;
+        position: relative;
+        left: -5px;
+    }
+
+    .search:hover{
+        background-color: rgb(255, 113, 167);
+        color: white;
+    }
+
+    .tougao{
+        background-color: rgb(255, 113, 167);
+        color: white;
+        border-style: none;
+        border-radius: 2px;
+        padding: 9px 32px;
+        transition-duration: 0.3s;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .imgcontant{
+        width: 2.5%;
+        text-align: right;
+        position: relative;
+        left: 25px;
+        transition-duration: 0.3s;
+    }
+    
+    .imgcontant:hover{
+        opacity: 0;
+    }
+
+    .imgcontant_2{
+        width: 64px;
+        float: left;
+    }
+
+    .headMark{
+        cursor: pointer;
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .backGround{
+        margin: auto;
+        width: 83%;
+        height: 199.2px;
+        background-color: white;
+        background-image: linear-gradient(to top ,rgb(49, 49, 49,0.75),rgb(49, 49, 49,0),rgb(49, 49, 49,0)),url(背景图.png); 
+        
+    }
+
+    .button_2{
+        background:#f25d8e;
+        border-radius: 4px;
+        color: white;
+        border: white solid 2.3px;
+        width: 76px;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    .button_2:hover{
+        background-color: #ff85ad;
+    }
+
+    .button_3{
+        background:rgba(0,0,0,.45) ;
+        border-radius: 4px;
+        border-style: none;
+        color: white;
+        width: 76px;
+        height: 32px;
+        font-size: 16px;
+        box-shadow: 0 0 0 2px hsla(0,0%,100%,.3);
+        margin-left: 10px;
+    }
+
+    .button_3:hover{
+        background-color: rgba(0,0,0,.5);
+    }
+
+    .input_2{
+        margin-top: 10px;
+        display: block;
+        border:none;
+        border-radius: 4px;
+        width: 730px;
+        height: 16px;
+        line-height: 26px;
+        background:rgba(255, 255, 255, 0);
+        color: white;
+        color: transparent;
+        text-shadow: 0 0 0 rgba(255, 255, 255, 0.842);
+        transition-duration: 0.3s;
+    }
+
+    .input_3{
+        margin-top: 10px;
+        display: block;
+        border:none;
+        border-radius: 4px;
+        width: 730px;
+        height: 16px;
+        line-height: 26px;
+        background:white;
+        color: black;
+        box-shadow: inset 0 2px 4px rgba(35,54,86,.3);
+        transition-duration: 0.3s;
+    }
+
+    .input_2:hover{
+        box-shadow: 0 0 0 1px hsla(0,0%,100%,.5);
+        background:hsla(0,0%,100%,0.2);
+    }
+
+    #catalogue{
+        margin: auto;
+         width: 83%;
+         height: 66px;
+         background-color: white;
+         border-radius: 0 0 4px 4px;
+    }
+
+    .list{
+        float: left;
+        padding: 0px 20px;
+        width: 578.6px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .list a{
+        height: 100%;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        transition-duration: 0.3s;
+    }
+
+    .list a:hover{
+        color: rgb(74, 183, 255);
+    }
+
+    .input_4{
+        height: 24px;
+        width: 70px;
+        border-style: solid;
+        border-radius: 30px;
+        padding: 0 15px;
+        color: #999999;
+        font-size: 13px;
+        transition-duration: 0.3s;
+    }
+
+    .input_4:hover{
+        border-color: rgb(74, 183, 255);
+    }
+
+    .button_1{
+        border-style: none;
+        background-color: rgba(222, 184, 135, 0);
+        background-image: url(搜索.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 10px;
+        border-radius: 0 24px 24px 0;
+        cursor: pointer;
+        position: relative;
+        left: -23.5px ;
+        bottom: 5.3px;
+    }
+
+    .deta{
+        float: right;
+        margin-right: 40px;
+        width: 90px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .deta a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .deta p{
+        line-height: 10px;
+        font-size: 13px;
+    }
+
+    #con{
+        width: 880px;
+        height: 100%;
+        padding: 15px 20px;
+        border-radius: 4px;
+        background-color:white;
+        position:relative;
+        left: 128px;
+        top: 12px;
+    }
+
+    .set{
+        width: 100%;
+        height: 215.8px;
+        padding-bottom: 20px;
+        margin-bottom: 17px;
+    }
+
+    #collect{
+        width: 276.8px;
+        height: 176.8px;
+        border: 2px dashed #b8c0cc;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        transition-duration: 0.3s;
+    }
+
+    #collect p{
+        color: #999999a8;
+    }
+
+    #collect:hover{
+        border: 2px dashed rgb(74, 183, 255);
+        
+    }
+
+
+   
+</style>
+<body>
+    <div id="firstblock">
+        <div>
+            <div style="display: flex;align-items: center;">
+                <img style="width: 50%;" src="bilibili.png"><a href="#">主站</a><em style="margin-left: 10px;">></em>
+            </div>           
+        </div>
+        <div>
+            <div style="display: flex;align-items: center;margin-left: -40px;">
+                <a href="#">番剧</a>
+                <a href="#">游戏中心</a>
+                <a href="#">直播</a>
+                <a href="#" style="color:rgb(74, 183, 255);">会员购</a>
+                <a href="#">漫画</a>
+                <a href="#">赛事</a>
+                <a href="#">下载APP</a><img src="小手机.png" alt="小手机" >
+            </div> 
+        </div>
+        <div>
+            <input class="input_1" placeholder="bilibili干杯[]~(￣▽￣)~*" type="search">
+            <button class="search">搜索</button> 
+        </div>
+        <div class="imgcontant">
+            <img src="akari.jpg" class="headMark">
+
+        </div>
+        <div>
+            <div style="display: flex;align-items: center;">
+                
+                <a href="#">大会员</a>
+                <a href="#">消息</a>
+                <a href="#">动态</a>
+                <a href="#">收藏</a>
+                <a href="#">历史</a>
+                <a href="#">创造中心</a>
+                <button class="tougao" type="submit">投稿</button>
+            </div> 
+        </div>
+    </div>
+    <div class="backGround">
+        <div style="width: 1280;height: 83.2px; position: relative;left: 20px;top: 116px;">   
+            <div class="imgcontant_2">
+                <img src="akari.jpg" class="headMark" style="border:2px solid rgba(192, 184, 184, 0.3);">
+            </div>
+            <div style="float: left;height: 54.4px;width: 740px;color: white;font-size: 20px;margin: 7px 0 0 18px;">
+                <span>用户名</span>
+                <input class="input_2" placeholder="点击编辑个性签名(确认后点击输入框)" id="sine" onclick="discover()">
+            </div>
+            <div style="position:relative;top:35px;left: 215px;">
+                <button class="button_2">关注</button>
+                <button class="button_3">发消息</button>    
+            </div>
+            
+        </div> 
+    </div>
+    <div id="catalogue">
+        <div class="list" id="lists">
+            <a href="#" ><img style="width: 38%;" src="小房子.png"><span style="color: rgb(74, 183, 255);">主页</span></a>
+        
+            <a href="#"><img style="width: 38%;" src="五角星.png"><span>动态</span></a>
+
+            <a href="#"><img style="width: 38%;" src="小电视.png"><span>投稿</span></a>
+
+            <a href="#"><img style="width: 38%;" src="频道.png"><span>频道</span></a>
+
+            <a href="#"><img style="width: 38%;" src="收藏.png"><span>收藏</span></a>
+
+            <a href="#"><img style="width: 38%;" src="订阅.png"><span>订阅</span></a>
+
+            <a href="#"><img style="width: 38%;" src="设置.png"><span>设置</span></a>
+        </div>
+        <div style="float: left;margin-top: 19px;">
+            <input class="input_4" placeholder="搜索视频"><button class="button_1"></button>
+        </div>
+        <div class="deta">
+            <a href="#"><p style="color: #999999;">关注数</p><p>0</p></a>
+            <a href="#"><p style="color: #999999;">粉丝数</p><p>0</p></a>
+        </div>
+
+    </div>
+    <div id="con">
+        <div class="set">
+            <div style="width: 100%;height: 33px;">
+                <span style="color: rgb(74, 183, 255);font-size: 12px;cursor: pointer;">我的粉丝看到的</span>
+                <span style="margin-left:10px;font-size:12px;cursor: pointer;">新访客看到的</span>
+                <div style="height: 0.5px;background-color: #b3b3b352;width: 100%;"></div>
+            </div>        
+            <div style="width: 100%;height: 180px;background-image: url(粉丝所见.png);background-position: bottom;background-repeat: no-repeat;">
+            <div id="collect">
+                <div id="collect p" style="margin-bottom: 25px; "  onclick="change1()" >
+                    <p style="font-size: 85px;margin: 0px;height: 95px;">+</p>
+                    <p style="margin: 0px;font-size: 12px;">设置置顶视频</p>
+                </div> 
+            </div>
+            <div style="height: 0.5px;background-color: #b3b3b352;width: 100%;"></div>
+
+        </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
